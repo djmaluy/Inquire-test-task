@@ -1,38 +1,50 @@
-.App {
+.editForm {
+  margin: 0 auto;
+  width: 500px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  background-color: whitesmoke;
+  margin-top: 50px;
+}
+h2 {
   text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form li + li {
+  margin-top: 1em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  font-weight: bold;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+  width: 300px;
+  font-size: 13px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  border-radius: 8px;
 }
-
-.App-link {
-  color: #61dafb;
+.editButton {
+  min-width: 80px;
+  border-radius: 5px;
+  background: #5a84d8;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 120px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editButton:hover {
+  background: #245ed1;
 }
